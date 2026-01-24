@@ -7,20 +7,13 @@
     systemd.tmpfiles.rules = [
     "L+    /opt/rocm/hip   -    -    -     -    ${pkgs.rocmPackages.clr}"
     ];
-    hardware.graphics.enable = true;
-    hardware.graphics.extraPackages = with pkgs; [
-    amdvlk
-    mesa.opencl
-    ];
-    # For 32 bit applications  
-    hardware.graphics.extraPackages32 = with pkgs; [
-      driversi686Linux.amdvlk
-    ];
-
-    hardware.opengl = {
+    
+    hardware.graphics = {
+      enable32Bit = true;
       enable = true;
-      driSupport = true;
-      driSupport32Bit = true;
+      extraPackages = with pkgs; [
+        mesa.opencl
+    ];
   };
   services.lact.enable = true;
   hardware.amdgpu.overdrive.enable = true;

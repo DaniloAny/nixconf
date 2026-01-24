@@ -7,6 +7,7 @@
     useOSProber = true;
     efiSupport = true;
   };
+  
   boot.loader.grub.devices = [
     "nodev"
   ];
