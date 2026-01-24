@@ -2,44 +2,91 @@
 
 {
   environment.systemPackages = with pkgs; [
-  heroic-unwrapped
-  gcc
-  protonmail-bridge
-  thunderbird
-  inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
-  neovim
-  networkmanager
-  hyprland
-  wayland
-  quickshell
+  
+  # terminal
   ghostty
-  rofi
   ani-cli
-  vscodium
-  nwg-look
+  neovim
   fastfetch
-  adwaita-icon-theme
-  git
-  flatpak
-  discord
-  spotify
-  hyprshot
-  mpv
-  discord
   starship
-  krita
-  yazi
   btop
+  yazi
+  nmap
+
+  # dev 
+  godot-mono
+  vscodium
   rustup
-  opentabletdriver
-  steam
+  git
+
+  # gaming
+  osu-lazer-bin
+  heroic-unwrapped
+  prismlauncher
+  oversteer
+
+  # general
+  spotify
+  discord
+  inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default #browser
+  krita
+  freecad
+  davinci-resolve
+  blender
+  nautilus
+
+  # themeing and icons
+  adwaita-icon-theme
+  papirus-icon-theme
+  nwg-look
+
+  # dependencies
+  gcc
   gnumake
+  jdk
+
+  #graphics packages
+  mesa.opencl
   mesa
   vulkan-volk
+
+  # system packages
+  quickshell
+  wayland
+  opentabletdriver
+  flatpak
+  networkmanager
+  rofi
+  mpv
+  easyeffects
+  #openrgb
+
+  # proton/wine
+  protonup-qt
+  protontricks
+
   ];
+
+systemd.packages = with pkgs; [
+  lact
+];
+
+systemd.services.lactd.wantedBy = ["multi-user.target"];
 
   fonts.packages = with pkgs; [
     jetbrains-mono
     font-awesome
  ];
+
+  services.desktopManager.gnome.enable = true;
+
+  # To disable installing GNOME's suite of applications
+  # and only be left with GNOME shell.
+  services.gnome.core-apps.enable = false;
+  services.gnome.core-developer-tools.enable = false;
+  services.gnome.games.enable = false;
+  environment.gnome.excludePackages = with pkgs; [ gnome-tour gnome-user-docs ];
+  hardware.new-lg4ff.enable = true;
+  hardware.opentabletdriver.enable = true;
+
 }

@@ -2,8 +2,19 @@
 
 {
   # Bootloader.
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
+  boot.loader.grub = {
+    enable = true;
+    useOSProber = true;
+    efiSupport = true;
+  };
+  boot.loader.grub.devices = [
+    "nodev"
+  ];
+  
+  boot.loader.efi = {
+    efiSysMountPoint = "/boot/efi";
+    canTouchEfiVariables = true;
+  };
 
   # time zone.
   time.timeZone = "Europe/Belgrade";
@@ -18,16 +29,20 @@
   };
   
   system.stateVersion = "25.11"; #it is reccomended this deosnt get touched
-
-  # enables hyprland
-  programs.hyprland.enable = true;
   
   #enables flatpaks
-  services.flatpak.enable = false;
+  services.flatpak.enable = true;
 
   # allows "unfree" packages.
   nixpkgs.config.allowUnfree = true;
 
   #enables flakes
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  
+  # enable ly the tui login manager
+  services.displayManager.ly.enable = true;
+
+
+  services.hardware.openrgb.enable = true;
+
 }

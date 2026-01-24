@@ -5,5 +5,5 @@
         ./hardware-configuration.nix
     ];
 
-  networking.hostName = "Apollo"; 
+  networking.hostName = "Artemis"; 
 }
