@@ -51,6 +51,8 @@
   vulkan-volk
 
   # system packages
+  inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland
+  hyprland
   quickshell
   wayland
   opentabletdriver
