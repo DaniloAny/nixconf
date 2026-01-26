@@ -12,6 +12,8 @@
   btop
   yazi
   nmap
+  brightnessctl
+  redshift
 
   # dev 
   godot-mono
@@ -52,7 +54,6 @@
 
   # system packages
   inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland
-  hyprland
   quickshell
   wayland
   opentabletdriver
@@ -61,7 +62,9 @@
   rofi
   mpv
   easyeffects
-  #openrgb
+  
+
+  ##openrgb
 
   # proton/wine
   protonup-qt

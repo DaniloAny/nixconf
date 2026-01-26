@@ -2,20 +2,9 @@
 
 {
   # Bootloader.
-  boot.loader.grub = {
-    enable = true;
-    useOSProber = true;
-    efiSupport = true;
-  };
-  
-  boot.loader.grub.devices = [
-    "nodev"
-  ];
-  
-  boot.loader.efi = {
-    efiSysMountPoint = "/boot/efi";
-    canTouchEfiVariables = true;
-  };
+  boot.loader.systemd-boot.enable = true;
+  boot.loader.efi.canTouchEfiVariables = true;
+  boot.loader.systemd-boot.configurationLimit = 5;
 
   # time zone.
   time.timeZone = "Europe/Belgrade";
