@@ -21,7 +21,7 @@
 			specialArgs = { inherit inputs; };
 			modules = [
 				./common
-				./Apollo/configuration.nix
+				./Artemis/configuration.nix
 			];
 		};
   };
