@@ -7,7 +7,5 @@
     ./packages.nix
     ./properties.nix
     ./networking.nix
-    ./hypr.nix
-    ./GPU.nix
   ];
 }
