@@ -18,8 +18,6 @@
     variant = "";
   };
   
-  system.stateVersion = "25.11"; #it is reccomended this deosnt get touched
-  
   #enables flatpaks
   services.flatpak.enable = true;
 
@@ -28,11 +26,4 @@
 
   #enables flakes
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
-  
-  # enable ly the tui login manager
-  services.displayManager.ly.enable = true;
-
-
-  services.hardware.openrgb.enable = true;
-
 }
