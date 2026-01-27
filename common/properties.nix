@@ -18,8 +18,6 @@
     variant = "";
   };
   
-  system.stateVersion = "25.11"; #it is reccomended this deosnt get touched
-  
   #enables flatpaks
   services.flatpak.enable = true;
 
@@ -28,6 +26,4 @@
 
   #enables flakes
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
-  
-  services.hardware.openrgb.enable = true;
 }

@@ -7,5 +7,7 @@
 				./devices.nix
     ];
 
-  networking.hostName = "Artemis"; 
+  networking.hostName = "Artemis";
+
+	system.stateVersion = "25.11"; 
 }

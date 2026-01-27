@@ -7,4 +7,6 @@
 
 	hardware.new-lg4ff.enable = true;
 	hardware.opentabletdriver.enable = true;
+
+	services.hardware.openrgb.enable = true;
 }
