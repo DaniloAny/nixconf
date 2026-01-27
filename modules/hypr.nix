@@ -5,6 +5,8 @@
 		./theme.nix
 	];
 
+	services.displayManager.ly.enable = true;
+
   programs.hyprland = {
     enable = true;
     # set the flake package

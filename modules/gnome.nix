@@ -6,6 +6,8 @@
 		./theme.nix
 	];
 
+	services.displayManager.ly.enable = true;
+
 	services.desktopManager.gnome.enable = true;
 
 	services.gnome.core-apps.enable = false;
