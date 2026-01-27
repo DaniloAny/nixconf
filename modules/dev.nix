@@ -6,5 +6,8 @@
 		vscodium
 		rustup
 		git
+		gcc
+		gnumake
+		jdk
 	];
 }

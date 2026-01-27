@@ -1,4 +1,4 @@
-{ pkgs, config, lib, ... }:
+{ pkgs, ... }:
 
 {
     boot.initrd.kernelModules = [ "amdgpu" ];
@@ -27,5 +27,9 @@
 
 	systemd.services.lactd.wantedBy = ["multi-user.target"];
 
-
+	environment.systemPackages = with pkgs; [ 
+  	mesa.opencl
+	  mesa
+  	vulkan-volk
+	];
 }

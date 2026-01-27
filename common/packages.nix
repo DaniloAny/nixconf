@@ -13,24 +13,11 @@
   papirus-icon-theme
   nwg-look
 
-  # dependencies
-  gcc
-  gnumake
-  jdk
-
-  #graphics packages
-  mesa.opencl
-  mesa
-  vulkan-volk
-
   # system packages
-  inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland
-  quickshell
   wayland
   opentabletdriver
   flatpak
   networkmanager
-  rofi
   mpv
   easyeffects
   ];
