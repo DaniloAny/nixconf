@@ -1,4 +1,9 @@
-{inputs, pkgs, config, ...}: {
+{ inputs, pkgs, ... }: 
+{
+	imports = [
+		./terminal.nix
+	];
+
   programs.hyprland = {
     enable = true;
     # set the flake package

@@ -2,18 +2,6 @@
 
 {
   environment.systemPackages = with pkgs; [
-  
-  # terminal
-  ghostty
-  ani-cli
-  neovim
-  fastfetch
-  starship
-  btop
-  yazi
-  nmap
-  brightnessctl
-  redshift
 
   # gaming
   osu-lazer-bin
