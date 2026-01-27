@@ -6,5 +6,6 @@
     ./hypr.nix
 		./gnome.nix
 		./dev.nix
+		./gaming.nix
   ];
 }

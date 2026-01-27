@@ -3,12 +3,6 @@
 {
   environment.systemPackages = with pkgs; [
 
-  # gaming
-  osu-lazer-bin
-  heroic-unwrapped
-  prismlauncher
-  oversteer
-
   # general
   spotify
   discord
