@@ -7,11 +7,6 @@
   spotify
   discord
   inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default #browser
-  krita
-  freecad
-  davinci-resolve
-  blender
-  nautilus
 
   # themeing and icons
   adwaita-icon-theme

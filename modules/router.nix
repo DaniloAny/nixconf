@@ -7,5 +7,6 @@
 		./gnome.nix
 		./dev.nix
 		./gaming.nix
+		./creativity.nix
   ];
 }
