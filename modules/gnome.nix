@@ -3,6 +3,7 @@
 {
 	imports = [
 		./terminal.nix
+		./theme.nix
 	];
 
 	services.desktopManager.gnome.enable = true;

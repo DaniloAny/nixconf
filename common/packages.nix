@@ -8,11 +8,6 @@
   discord
   inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default #browser
 
-  # themeing and icons
-  adwaita-icon-theme
-  papirus-icon-theme
-  nwg-look
-
   # system packages
   wayland
   opentabletdriver

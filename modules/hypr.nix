@@ -2,6 +2,7 @@
 {
 	imports = [
 		./terminal.nix
+		./theme.nix
 	];
 
   programs.hyprland = {
