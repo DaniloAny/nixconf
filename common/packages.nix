@@ -10,7 +10,6 @@
 
   # system packages
   wayland
-  opentabletdriver
   flatpak
   networkmanager
   mpv
@@ -21,7 +20,4 @@
     jetbrains-mono
     font-awesome
  ];
-
-  hardware.new-lg4ff.enable = true;
-  hardware.opentabletdriver.enable = true;
 }
