@@ -33,14 +33,6 @@
   rofi
   mpv
   easyeffects
-  
-
-  ##openrgb
-
-  # proton/wine
-  protonup-qt
-  protontricks
-
   ];
 
   fonts.packages = with pkgs; [

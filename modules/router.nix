@@ -8,5 +8,6 @@
 		./dev.nix
 		./gaming.nix
 		./creativity.nix
+		./wine.nix
   ];
 }
