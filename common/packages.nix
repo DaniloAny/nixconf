@@ -15,12 +15,6 @@
   brightnessctl
   redshift
 
-  # dev 
-  godot-mono
-  vscodium
-  rustup
-  git
-
   # gaming
   osu-lazer-bin
   heroic-unwrapped
