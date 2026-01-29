@@ -6,6 +6,7 @@
 		freecad
 		davinci-resolve
 		blender
+		obs-studio
 	];
 }
 

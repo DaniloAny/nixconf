@@ -18,6 +18,7 @@
 	environment.systemPackages = with pkgs; [
 		quickshell
 		rofi
+		hyprshot
 		inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland
 	];
 }

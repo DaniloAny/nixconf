@@ -9,5 +9,6 @@
 		./gaming.nix
 		./creativity.nix
 		./wine.nix
+		./audio.nix
   ];
 }
