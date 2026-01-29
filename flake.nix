@@ -21,7 +21,7 @@
 			specialArgs = { inherit inputs; };
 			modules = [
 				./common
-				./Artemis/configuration.nix
+				./hosts/Artemis/configuration.nix
         ./modules
 			];
 		};
