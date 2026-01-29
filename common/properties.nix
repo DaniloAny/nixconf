@@ -2,9 +2,9 @@
 
 {
   # Bootloader.
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
-  boot.loader.systemd-boot.configurationLimit = 5;
+  boot.loader.systemd-boot.enable = false;
+  #boot.loader.efi.canTouchEfiVariables = true;
+  #boot.loader.systemd-boot.configurationLimit = 5;
 
   # time zone.
   time.timeZone = "Europe/Belgrade";
