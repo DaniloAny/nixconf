@@ -10,6 +10,6 @@
 		./creativity.nix
 		./wine.nix
 		./audio.nix
-		./tailscale.nix
+		./remote-desktop.nix
   ];
 }
