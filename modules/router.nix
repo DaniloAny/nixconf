@@ -10,5 +10,6 @@
 		./creativity.nix
 		./wine.nix
 		./audio.nix
+		./tailscale.nix
   ];
 }
