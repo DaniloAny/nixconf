@@ -3,7 +3,7 @@
 {
     imports = [
       ./hardware-configuration.nix
-			"${mod}/devices.nix"
+			./devices.nix
       "${mod}/GPU.nix"
       "${mod}./hypr.nix"
 		  "${mod}./gnome.nix"
