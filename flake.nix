@@ -13,16 +13,19 @@
       inputs.hyprland.follows = "hyprland";
     };
   };
-
+  
 
   outputs = { self, nixpkgs, ... }@inputs: 
+  let 
+    mod = ./modules;
+    
+  in
   {
 		nixosConfigurations.Artemis= nixpkgs.lib.nixosSystem {
-			specialArgs = { inherit inputs; };
+			specialArgs = { inherit inputs mod; };
 			modules = [
 				./common
 				./hosts/Artemis/configuration.nix
-        ./modules
 			];
 		};
   };

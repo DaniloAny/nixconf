@@ -1,9 +1,9 @@
-{ ... }:
+{ inputs, mod, ... }:
 
 {
     imports = [
         ./hardware-configuration.nix
-				../../modules/router.nix
+				"${mod}/default.nix"
 				./devices.nix
     ];
 
