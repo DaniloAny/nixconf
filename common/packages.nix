@@ -5,7 +5,6 @@
 
   # general
   spotify
-  w3m
   discord
   inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default #browser
 
